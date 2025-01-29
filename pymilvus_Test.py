@@ -11,7 +11,7 @@ import uvicorn
 app = FastAPI()
 
 # 1. Connect to Milvus
-connections.connect("default", host="localhost", port="19530")
+connections.connect("default", host="milvus", port="19530")
 
 # 2. Define Collection Schema
 fields = [
